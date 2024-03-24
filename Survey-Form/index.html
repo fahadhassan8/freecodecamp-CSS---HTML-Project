@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Registration Form</h1>
+  <p id="description">Please fill out this form with the required information</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Enter Your Name:
+      <input id="name" type="text" placeholder="Your Name" required>
+    </label>
+    <label for="email" id="email-label">Enter Your Email:
+      <input id="email" type="email" placeholder="Your Email" required>
+    </label>
+    <label for="number" id="number-label">Enter a Number:
+      <input id="number" type="number" placeholder="Number" min="1" max="10" required>
+    </label>
+    <label for="dropdown">Select an Option:
+      <select id="dropdown">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+      </select>
+    </label>
+    <fieldset>
+      <legend>Choose an Option:</legend>
+      <label><input type="radio" name="radio-option" value="radio1"> Option 1</label>
+      <label><input type="radio" name="radio-option" value="radio2"> Option 2</label>
+    </fieldset>
+    <fieldset>
+      <legend>Select Options:</legend>
+      <label><input type="checkbox" name="checkbox-option" value="checkbox1"> Option 1</label>
+      <label><input type="checkbox" name="checkbox-option" value="checkbox2"> Option 2</label>
+    </fieldset>
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" placeholder="Your Comments"></textarea>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>
